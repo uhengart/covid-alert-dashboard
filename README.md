@@ -1,4 +1,4 @@
-# covid-alert-dashboard
+# Unofficial COVID Alert Dashboard
 
 This project tries to infer the number of COVID-19 infections reported through [COVID Alert](https://github.com/cds-snc/covid-alert-app), Canada's exposure notifications app. This project is not affiliated with Health Canada or the Canadian Digital Service maintaining COVID Alert.
 
