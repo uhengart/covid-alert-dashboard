@@ -8,7 +8,7 @@ The following link gives our daily estimates:
 
 [Estimated daily number of infections reported through COVID Alert](https://kappel.cs.uwaterloo.ca/uhengart/diagnosis-keys/estimated_infections_per_day.txt)
 
-The estimates are for all of Canada. I cannot compute province-specific estimates.
+The estimates are for all of Canada. We cannot compute province-specific estimates.
 
 ## Estimation Algorithm
 
