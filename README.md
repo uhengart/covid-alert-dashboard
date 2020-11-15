@@ -4,11 +4,13 @@ This project tries to infer the number of COVID-19 infections reported through [
 
 COVID Alert users who get infected with COVID-19 use the app to send diagnosis keys to a central server. Diagnosis keys are used by the app to generate the Bluetooth identifiers broadcast by the phone. Other COVID Alert app users will download the uploaded diagnosis keys from the server and use them to find matches among the Bluetooth identifers broadcast by nearby smartphones and captured by their phone. This project retrieves the diagnosis keys not to find matches, but to estimate the number of app users who reported an infection. 
 
-The following link gives our daily estimates:
+![Daily upload numbers](https://kappel.cs.uwaterloo.ca/uhengart/diagnosis-keys/Graph.png)
 
-[Estimated daily number of infections reported through COVID Alert](https://kappel.cs.uwaterloo.ca/uhengart/diagnosis-keys/estimated_infections_per_day.txt)
+[Raw data](https://kappel.cs.uwaterloo.ca/uhengart/diagnosis-keys/DiagnosisKeysAnalysis.csv)
 
-The estimates are for all of Canada. We cannot compute province-specific estimates.
+The blue line shows our daily estimates. The orange lines shows the daily total of our estimates. The gray line shows the total number of infections reported through COVID Alert, as irregularly [reported by Health Canada](https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/covid-alert.html) (scroll down).
+
+All numbers are for all of Canada. We cannot compute province-specific estimates.
 
 ## Estimation Algorithm
 
