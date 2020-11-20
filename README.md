@@ -10,7 +10,7 @@ The blue line shows our estimates of the daily number of COVID-19 cases reported
 
 ![Cumulative numbers](Cumulative.png)
 
-The yellow lines shows the cumulative total of our estimates. The green line displays the total number of cases reported through COVID Alert as irregularly [provided by Health Canada](https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/covid-alert.html) (scroll down).
+The yellow line shows the cumulative total of our estimates. The green line displays the total number of cases reported through COVID Alert as irregularly [provided by Health Canada](https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/covid-alert.html) (scroll down on that page to see the number).
 
 [Raw data](DiagnosisKeysAnalysis.csv)
 
