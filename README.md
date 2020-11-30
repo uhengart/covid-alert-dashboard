@@ -14,7 +14,7 @@ The yellow line shows the cumulative total of our estimates. The green line disp
 
 [Raw data](DiagnosisKeysAnalysis.csv)
 
-All numbers are for the eight provinces where the COVID Alert app is currently active (Manitoba, New Brunswick, Newfoundland and Labrador, Nova Scotia, Ontario, Prince Edward Island, Quebec, Saskatchewan). We cannot compute province-specific estimates.
+All numbers are for the nine provinces/territories where the COVID Alert app is currently active (Manitoba, New Brunswick, Newfoundland and Labrador, Northwest Territories, Nova Scotia, Ontario, Prince Edward Island, Quebec, Saskatchewan). We cannot compute province-specific estimates.
 
 ## Estimation Algorithm
 
