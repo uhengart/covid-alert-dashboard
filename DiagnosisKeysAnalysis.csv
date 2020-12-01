@@ -1,4 +1,4 @@
-,Estimated daily number of cases reported through COVID Alert,Estimated cumulative number of cases reported through COVID Alert,Health Canada's cumulative number of cases reported through COVID Alert,Daily number of cases in eight COVID Alert provinces,Percentage of cases in eight COVID Alert provinces reported through COVID Alert
+,Estimated daily number of cases reported through COVID Alert,Estimated cumulative number of cases reported through COVID Alert,Health Canada's cumulative number of cases reported through COVID Alert,Daily number of cases in nine COVID Alert provinces/territories,Percentage of cases in nine COVID Alert provinces/territories reported through COVID Alert
 2020-08-18,5,71,,,
 2020-08-19,2,73,,,
 2020-08-20,3,76,,,
@@ -101,5 +101,6 @@
 2020-11-25,147,5687,6243,3763,3.9%
 2020-11-26,144,5831,6406,3811,3.8%
 2020-11-27,127,5958,,3886,3.3%
-2020-11-28,134,6092,,3734,3.6%
-2020-11-29,104,6196,,,
+2020-11-28,134,6092,,3733,3.6%
+2020-11-29,104,6196,6813,3835,2.7%
+2020-11-30,123,6319,,,
