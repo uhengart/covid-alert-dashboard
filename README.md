@@ -6,11 +6,11 @@ COVID Alert users who get infected with COVID-19 use the app to send diagnosis k
 
 ![Daily numbers](Daily.png)
 
-The blue line shows our estimates of the daily number of COVID-19 cases reported through the COVID Alert app. The red line displays how many percent these numbers correspond to out of all COVID-19 cases reported for the eight provinces that support COVID Alert (data from [COVID-19 in Canada](https://art-bd.shinyapps.io/covid19canada/)).
+The blue line shows our estimates of the daily number of COVID-19 cases reported through the COVID Alert app. The red line displays the estimated percentage of COVID-19 cases that were reported through the COVID Alert app (for the nine provinces and territories where COVID Alert is supported, data from [COVID-19 in Canada](https://art-bd.shinyapps.io/covid19canada/)). 
 
 ![Cumulative numbers](Cumulative.png)
 
-The yellow line shows the cumulative total of our estimates. The green line displays the total number of cases reported through COVID Alert as irregularly [provided by Health Canada](https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/covid-alert.html) (scroll down on that page to see the number).
+The yellow line shows the cumulative number of COVID-19 cases reported through the COVID Alert app, as determined based on our estimates. The green line displays the cumulative number of COVID-19 cases reported through the COVID Alert app, as [irregularly provided by Health Canada](https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/covid-alert.html) (scroll down on that page to see the number).
 
 [Raw data](DiagnosisKeysAnalysis.csv)
 
