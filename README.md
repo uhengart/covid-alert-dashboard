@@ -20,9 +20,9 @@ The purple bars show the median number of days passed between the day when an in
 
 All numbers are for the nine provinces and territories where the COVID Alert app is currently active (Manitoba, New Brunswick, Newfoundland and Labrador, Northwest Territories, Nova Scotia, Ontario, Prince Edward Island, Quebec, Saskatchewan). We cannot compute province-specific estimates.
 
-## Estimation Algorithm for Upload Numbers
+## Estimation Algorithm for Daily Number of Reported Infections 
 
-Our algorithm for estimating the daily number of infections works as follows:
+Our algorithm for estimating the daily number of reported infections works as follows:
 
 1. Once an hour, we retrieve the diagnosis keys uploaded so far today. The server is configured to return all keys uploaded before the top of the hour.
 The retrieval takes advantage of [retrieve-canadian-diagnosis-keys](https://github.com/uhengart/retrieve-canadian-diagnosis-keys). 
@@ -86,3 +86,11 @@ Our estimation algorithm requires that there is a sequence of at least three key
 An alternative approach to estimate the number of daily infections is to divide the number of diagnosis keys uploaded on a given day by 28. This approach exploits the observation that each infected user uploads 28 (27?) diagnosis keys. However, this approach has two disadvantages: First, the computed number would be correct only if the number of infections per day were constant; otherwise, the number is only an approximation. Second, an infected user may report fewer than 28 diagnosis keys, so this approach would underestimate the number of infections. Given the changes to the uploading behaviour as of October 2020 (see above) and that, according to our data, most users choose the option to indicate the day where symptoms started to appear or they took the test, this approach no longer makes sense.
 
 ## Estimation Algorithm for Upload Delays
+
+The algorithm to estimate the upload delays exploits the sequence lengths estimated with the algorithm explained above. As already mentioned, an infected user can indicate the day of symptom onset when uploading their diagnosis keys. Then, the sequence of uploaded diagnosis keys will start two days before this day and end the day before the upload day. For example, a user who first experienced symptoms on Dec 8 and uploads their diagnosis keys on Dec 10 (i.e., there is a delay of two days) will upload the diagnosis keys for Dec 6, 7, 8, and 9. Therefore, the upload delay is computed as the sequence length minus two.
+
+The following caveats may affect our upload delay estimates:
+* An infected user can indicate either the day of symptom onset or the day when they took the test. We do not know the user's choice. COVID Alert initially asks the user only for the day of symptom onset. The user is asked for the day when they took the test only when choose not to indicate the day of symptom onset. Arguably, this workflow biases users who have experienced symptomps to indicate they day of symptom onset and not the day of testing. For users who indicate the day when they took the test, our estimate of the upload delay will be too low if they took the test after symptom onset (arguably the more likely case) or too high if they took the test before symptom onset.
+* For a user who indicates neither the day of symptom onset nor the day of testing, a complete sequence of length 13 will be uploaded. We do not consider such sequences in our computation of the upload delay. 
+* As mentioned in the description of the algorithm to estimate the daily number of infections, there are multiple reasons why sequences of diagnosis keys that are for fewer than 13 days can be uploaded. A user indicating the day of symptom onset or testing is only one possible reason. This feature was added to COVID Alert only in October. Before addition of this feature, about 30% of the uploaded sequences were for fewer than 13 days. Currently, about 90% are.
+*  As mentioned in the description of the algorithm that estimates the daily number of infections, we do not consider sequences of length two as indicator for a reported infection. This is probably (one of) the reasons why our estimates are about 10% below the upload numbers released by Health Canada (see graph above). Not considering sequences of length two when estimating the upload delay will lead to an overestimate of the delay. Therefore, when computing the upload delay, we assume that our identified set of sequences with lengths between 3 and 12 corresponds to only 90% of the reported infections and that the remaining 10% have a sequence length of two.
