@@ -14,9 +14,10 @@ The yellow line shows the cumulative number of COVID-19 cases reported through t
 
 ![Upload delays](Delay.png)
 
-The purple bars shows the delays in reporting infections. Namely, for all infected users who used COVID Alert to alert others of a possible exposure on a given date, the purple bar shows the median number of days passed for these users since they first experienced symptoms. For example, for the users who used COVID Alert to alert others of an exposure on Dec 11, they first experienced symptoms around three days ago so there is a delay of three days. Ideally, there is a delay of zero days in order for COVID Alert to be most effective and disrupt chains of infections as quickly as possible. The reason is that infected users are most contagious during the two days before onset of symptoms. The brown line shows the percentage of infected users who indicated the day when they first experienced symptoms or when they took the test. Users are not required to provide this information when reporting an infection with COVID Alert.
+The orange bars show the delays in reporting infections. Namely, for all infected users who used COVID Alert to alert others of a possible exposure on a given date, the orange bar for that date shows the median number of days passed for these users since they first experienced symptoms. For example, for the users who used COVID Alert to alert others of an exposure on Dec 11, they first experienced symptoms around three days ago so there was a delay of three days. Ideally, for COVID Alert to be most effective and disrupt chains of infections as quickly as possible, there is no delay. The reason is that infected users are most contagious during the two days before onset of symptoms. The purple line shows the percentage of infected users who indicated the day when they first experienced symptoms or when they took the test. Users are not required to provide this information when reporting an infection with COVID Alert.
 
-[Raw data for upload numbers](DiagnosisKeysAnalysis.csv)  [Raw data for upload delays](UploadDelay.csv)
+[Raw data for upload numbers](DiagnosisKeysAnalysis.csv)  
+[Raw data for upload delays](UploadDelay.csv)
 
 All numbers are for the nine provinces and territories where the COVID Alert app is currently active (Manitoba, New Brunswick, Newfoundland and Labrador, Northwest Territories, Nova Scotia, Ontario, Prince Edward Island, Quebec, Saskatchewan). We cannot compute province-specific estimates.
 
