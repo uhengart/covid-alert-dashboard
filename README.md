@@ -12,11 +12,11 @@ The blue bars show our estimates of the daily number of COVID-19 cases reported 
 
 The yellow line shows the cumulative number of COVID-19 cases reported through the COVID Alert app, as determined based on our estimates. The green line displays the cumulative number of COVID-19 cases reported through the COVID Alert app, as [irregularly provided by Health Canada](https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/covid-alert.html) (scroll down on that page to see the number).
 
-![Upload delays](Delays.png)
+![Upload delays](Delay.png)
 
-The purple bars show the median number of days passed between the day when an infected user of the COVID Alert app first experienced symptoms and the day when the user used the app to alert other app users of a possible exposure. This interval should be as short as possible in order for COVID Alert to be most effective and disrupt chains of infections as quickly as possible. The reason is that infected users are most contagious during the two days before onset of symptoms. The brown line shows the percentage of infected app users who chose to indicate the day when they first experienced symptoms or when they took the test while using the app to alert users potentially exposed to them.
+The purple bars shows the delays in reporting infections. Namely, for all infected users who used COVID Alert to alert others of a possible exposure on a given date, the purple bar shows the median number of days passed for these users since they first experienced symptoms. For example, for the users who used COVID Alert to alert others of an exposure on Dec 11, they first experienced symptoms around three days ago so there is a delay of three days. Ideally, there is a delay of zero days in order for COVID Alert to be most effective and disrupt chains of infections as quickly as possible. The reason is that infected users are most contagious during the two days before onset of symptoms. The brown line shows the percentage of infected users who indicated the day when they first experienced symptoms or when they took the test. Users are not required to provide this information when reporting an infection with COVID Alert.
 
-[Raw data for upload numbers](DiagnosisKeysAnalysis.csv)  [Raw data for upload delays](UploadDelays.csv)
+[Raw data for upload numbers](DiagnosisKeysAnalysis.csv)  [Raw data for upload delays](UploadDelay.csv)
 
 All numbers are for the nine provinces and territories where the COVID Alert app is currently active (Manitoba, New Brunswick, Newfoundland and Labrador, Northwest Territories, Nova Scotia, Ontario, Prince Edward Island, Quebec, Saskatchewan). We cannot compute province-specific estimates.
 
