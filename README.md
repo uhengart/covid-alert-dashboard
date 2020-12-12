@@ -1,8 +1,10 @@
 # Unofficial COVID Alert Dashboard
 
-This project tries to infer the number of COVID-19 infections reported through [COVID Alert](https://github.com/cds-snc/covid-alert-app), Canada's exposure notifications app. This project is not affiliated with Health Canada or the Canadian Digital Service maintaining COVID Alert.
+The unofficial COVID Alert dashboard shows the number of COVID-19 infections reported through [COVID Alert](https://github.com/cds-snc/covid-alert-app), Canada's exposure notifications app, and the delay in reporting these infections. This project is not affiliated with Health Canada or the Canadian Digital Service maintaining COVID Alert.
 
-COVID Alert users who get infected with COVID-19 use the app to send diagnosis keys to a central server. Diagnosis keys are used by the app to generate unique Bluetooth identifiers that are broadcast by the phone. Other COVID Alert app users will download the uploaded diagnosis keys from the server and use them to find matches among the Bluetooth identifers broadcast by nearby smartphones and captured by their phone. This project retrieves the diagnosis keys not to find matches, but to estimate the number of app users who reported an infection and the number of days passed between the day when a COVID Alert user first experienced symptoms and the day when they alerted other users of a possible exposure.
+COVID Alert users who get infected with COVID-19 use the app to submit diagnosis keys to a central server. Diagnosis keys are used by the app to generate unique Bluetooth identifiers, which are broadcast by a phone and captured by nearby phones. Other COVID Alert app users download the uploaded diagnosis keys from the server and use them to find matches among the Bluetooth identifers captured by their phone. This project retrieves the diagnosis keys from the central server not to find matches, but to estimate
+* the number of people who reported an infection through the COVID Alert app and
+* the delay between a COVID Alert user first experiencing symptoms and the user reporting their infection.
 
 ![Daily numbers](Daily.png)
 
@@ -10,16 +12,16 @@ The blue bars show our estimates of the daily number of COVID-19 cases reported 
 
 ![Cumulative numbers](Cumulative.png)
 
-The yellow line shows the cumulative number of COVID-19 cases reported through the COVID Alert app, as determined based on our estimates. The green line displays the cumulative number of COVID-19 cases reported through the COVID Alert app, as [irregularly provided by Health Canada](https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/covid-alert.html) (scroll down on that page to see the number).
+The yellow line shows the cumulative number of COVID-19 cases reported through the COVID Alert app, as determined based on our daily estimates above. The green line displays the cumulative number of COVID-19 cases reported through the COVID Alert app, as [irregularly provided by Health Canada](https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/covid-alert.html) (scroll down on that page to see the number).
 
 ![Upload delays](Delay.png)
 
-The orange bars show the delays in reporting infections. Namely, for all infected users who used COVID Alert to alert others of a possible exposure on a given date, the orange bar for that date shows the median number of days passed for these users since they first experienced symptoms. For example, for the users who used COVID Alert to alert others of an exposure on Dec 11, they first experienced symptoms around three days ago so there was a delay of three days. Ideally, for COVID Alert to be most effective and disrupt chains of infections as quickly as possible, there is no delay. The reason is that infected users are most contagious during the two days before onset of symptoms. The purple line shows the percentage of infected users who indicated the day when they first experienced symptoms or when they took the test. Users are not required to provide this information when reporting an infection with COVID Alert.
+The orange bars show the delays in reporting infections. Namely, for all infected users who used COVID Alert to alert others of a possible exposure on a given day, the orange bar for that day shows the median number of days passed for these users since they first experienced symptoms. For example, for the users who used COVID Alert to alert others of an exposure on Dec 11, they first experienced symptoms around three days ago so there was a delay of three days. Ideally, for COVID Alert to be most effective and breaking chains of infections as quickly as possible, there should be no delay. The reason is that infected users are most contagious during the two days before onset of symptoms. The purple line shows the percentage of infected users who indicated the day when they first experienced symptoms or when they took the test. Users are not required to provide this information when reporting an infection with COVID Alert.
 
 [Raw data for upload numbers](DiagnosisKeysAnalysis.csv)  
 [Raw data for upload delays](UploadDelay.csv)
 
-All numbers are for the nine provinces and territories where the COVID Alert app is currently active (Manitoba, New Brunswick, Newfoundland and Labrador, Northwest Territories, Nova Scotia, Ontario, Prince Edward Island, Quebec, Saskatchewan). We cannot compute province-specific estimates.
+All numbers are for the nine provinces and territories where the COVID Alert app is currently active (Manitoba, New Brunswick, Newfoundland and Labrador, Northwest Territories, Nova Scotia, Ontario, Prince Edward Island, Quebec, Saskatchewan). We cannot compute province or territory-specific estimates.
 
 ## Estimation Algorithm for Daily Number of Reported Infections 
 
