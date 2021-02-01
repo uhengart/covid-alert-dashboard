@@ -10,7 +10,7 @@ In the following figure, the blue bars show our estimates of the daily number of
 
 ![Daily numbers](Daily.png)
 
-In the next figure, the yellow line shows the cumulative number of COVID-19 cases reported through the COVID Alert app, as determined based on our daily estimates above. The green line displays the cumulative number of COVID-19 cases reported through the COVID Alert app, as [irregularly provided by Health Canada](https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/covid-alert.html) (scroll down on that page to see the number).
+In the next figure, the yellow line shows the cumulative number of COVID-19 cases reported through the COVID Alert app, as determined based on our daily estimates above. The green line displays the cumulative number of one-time keys uploaded through the COVID Alert app, as [irregularly provided by Health Canada](https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/covid-alert.html) (scroll down on that page to see the number). The uploading of a one-time key precedes the uploading of the diagnosis keys.  Until January 2021, [10% of the infected users](https://github.com/cds-snc/covid-alert-app/pull/1331) who uploaded a one-time key through COVID Alert did not upload their diagnosis keys and no exposure notifications were issued.
 
 ![Cumulative numbers](Cumulative.png)
 
